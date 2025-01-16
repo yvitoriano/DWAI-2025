@@ -5,3 +5,13 @@ body{
 main{
     
 }
+
+.perfil{
+    display: flex;
+}
+
+.dados-perfil{
+    width: 337px;
+    height: 80px;
+}
+
