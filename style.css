@@ -8,7 +8,7 @@ body{
 .container{
     flex-direction: column;
     width: 1250px;
-    height: 1394px;
+    height: 1280px;
     padding: 92px 135px;
     background: #FAFAFA;
     gap: 71px;
@@ -26,14 +26,13 @@ body{
     border-radius: 10px;
     background: #FFF;
     box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.10);
-    justify-content: center;
-    align-items: center; 
-    padding: 0px 0px 16px 0px; 
+    justify-content: center; 
+    
     margin-top:10px;
 }
 
 .dados{
-    margin-right: ; 
+    
 }
 
 
@@ -55,6 +54,9 @@ body{
 
 .cards{
     flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 35px;
+
 }
 
 .card{
@@ -63,4 +65,37 @@ body{
     border-radius: 5px;
     background: #FFF;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
+    display: flex;
+    flex-direction: column;
 }
+
+.conteúdo{
+    margin: 16px;
+    gap: 8px;
+}
+
+.conteúdo h3{
+    margin: 0;
+}
+
+.conteúdo a{
+    margin-top: 12px;
+}
+
+.links{
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    margin-top: 20px;
+    justify-content: center;
+    border-top: 1px solid #DEE2E6;
+    padding: 32px 0px 16px 0px;
+}
+footer small{
+    color: #6C757D;
+    font-size: 16px;
+}
+

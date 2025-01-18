@@ -2,4 +2,7 @@
     display: flex;
 }
 
-
+.conteúdo{
+    display: flex;
+    flex-direction: column;
+}
