@@ -1,0 +1,26 @@
+.flex{ 
+    display: flex;
+}
+
+.conteúdo{
+    display: flex;
+    flex-direction: column;
+}
+
+.borda_amarela{
+    border: 2px solid #FFC107;
+}
+.amarelo{
+    color: #FFC107;
+}
+
+@media(max-width:600px){
+    .perfil{
+        flex-flow: column nowrap;
+
+    }
+
+    .cards{
+        flex-flow: column nowrap;
+    }
+}
