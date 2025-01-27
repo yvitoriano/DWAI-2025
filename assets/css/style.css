@@ -10,8 +10,6 @@ body{
 .container{
     flex-direction: column;
     width: 1250px;
-    height: 1280px;
-    padding: 0px 135px 0px 135px;
     background: #FAFAFA;
     gap: 71px;
 }
@@ -21,14 +19,11 @@ body{
 }
 
 .dados-perfil{
-    width: 369px;
-    height: 344px;
     flex-direction: column;
     border-radius: 10px;
     background: #FFF;
     box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.10);
     justify-content: center; 
-    
     margin-top:20px;
 }
 
@@ -59,9 +54,12 @@ body{
     padding-bottom: 16px;
 }
 
+
+
 .cards{
     flex-wrap: wrap;
     gap: 53px;
+    width: 100%;
     
 }
 
