@@ -1,0 +1,28 @@
+body{
+    margin: 0px;
+
+}
+header{
+    background: linear-gradient(265deg, #203C86 46.03%, #203C86 53.97%);
+    width: 100%;
+    justify-content: center;
+}
+
+.midias{
+    flex-direction: column;
+}
+
+.redes-sociais{
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.menu{
+    justify-content: space-between;
+}
+
+main{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
