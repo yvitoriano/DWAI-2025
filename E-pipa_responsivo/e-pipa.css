@@ -60,6 +60,43 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
+main h1{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.apresentacao1{
+    max-width: 785px;
+    flex-direction: column;
+    
+}
+
+.comentario p {
+    color: var(--ui-color-primary, #2648A1);
+    font-family: Montserrat;
+    font-size: 21px;
+    font-style: italic;
+    font-weight: 400;   
+}
+
+.comentario {
+    color: #4D535B;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.apresentacao1 p{
+    color: var(--Prata, #3C4858);
+    font-family: Lato;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+}
 
