@@ -18,6 +18,7 @@ header{
 .midias{
     flex-direction: column;
     width: 100%;
+    max-width: 1200px;
 }
 
 .redes-sociais{
@@ -27,6 +28,7 @@ header{
     font-family: Montserrat;
     font-size: 11px;
     font-weight: 300;
+   
 }
 
 .linha{
@@ -39,6 +41,8 @@ header{
 .menu{
     justify-content: space-between;
     font-family: Montserrat;
+   
+
 }
 
 .menu nav a:link{
@@ -107,7 +111,7 @@ main h1{
     font-size: 21px;
     font-style: normal;
     font-weight: 400;
-    margin: 50px 0 0 0;
+    margin: 50px 0 50px 0;
 }
 
 .logo2{
@@ -116,7 +120,6 @@ main h1{
 }
 
 .sub-titulo{
-    margin-top: 70px;
     color: var(--ui-color-primary, #2648A1);
     font-family: Montserrat;
     font-size: 14px;
@@ -124,27 +127,194 @@ main h1{
     font-weight: 500;
 }
 
+
 .sub-titulo h2{
     margin: 0;
-    border-bottom: #ffc82c 3px solid;
+}
+
+.amarelo {
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: var(--Gradiente-Laranja, linear-gradient(90deg, #E79A30 0.27%, #E8B743 99.65%));
 }
 
 .descriçao2{
     color: var(--Prata, #3C4858);
-    max-width: 485px;
+    max-width: 430px;
     font-family: Lato;
     font-size: 21px;
     font-style: normal;
     font-weight: 400;
-    margin-top: 30px;
 }
 
-.conteudo-imagem{
-    
+.conteudo{
+    display: flex;
+    margin: 0 auto;
+    justify-content: flex-end;
 }
 
-.artigo{
+.card img{
+    margin: 0;
+}
+
+.card figcaption{
+    border: 1px solid #203C86;
+    width: 463px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+    font-family: "Montserrat";
+}
+
+.card figcaption h3{
+    margin: 0;
+    font-size: 18px;
+}
+
+.card figcaption small{
+    font-size: 13px;
+}
+
+.content {
+    width: 100%;
+    font-family: "Montserrat";
+}
+
+.p1{
+    color: var(--ui-color-primary, #2648A1);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.p2{
+    color: var(--ui-color-primary, #2648A1);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.card-image h3 {
+    margin: 0;
+    color: var(--Prata, #3C4858);
+    font-family: "Montserrat";
+    font-size: 18px;
+}
+ .card-image .credito {
+    color: var(--Prata, #3C4858);
+    font-family: "Montserrat";
+    font-size: 13px;
+}
+
+.card-image {
+    margin: 0;
+}
+
+.card-image figcaption{
+    padding-left: 10px;
+}
+
+.praias{
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer {
+    margin-top: 40px;
+    background: linear-gradient(130deg, #0D3F82 23.84%, #001736 73.02%);
+    display: table;
+    width: 100%;
+    color: #ffffff;
+}
+
+
+.left {
+    float: left;
+}
+
+.footer .coluna {
+    width: 28%;
+    margin-right: 1.1%;
+    padding: 100px 0;
+}
+
+.footer .coluna-1 div {
+    padding: 20px;
+}
+
+.footer .coluna-1 figure {
+    margin-bottom: 30px;
+}
+
+.footer .coluna-2 {
+    width: 40%;
+}
+
+.footer .coluna-2 .menus {
+    display: table;
+    width: 100%;
+}
+
+.footer .coluna-2 .menus li, a{
+    list-style: none;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 10px;
+}
+
+.footer .coluna-2 p {
+    margin-left: 60px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.footer .bloco-telegram {
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    margin-left: 40px;
+    border-radius: 10px;
+    height: 280px;
+}
+
+.footer .coluna-3 h3 {
+    color: rgb(23, 22, 22);
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 20px ;
+}
+
+.footer .coluna-3 p {
+    color: #5d5d5d;
+    font-size: 16px;
+    text-align: left;
+    max-width: 260px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.footer .coluna-3 .button {
+    border: #2648A1 solid 1px;
+    border-radius: 5px;
+    background-color: #2648A1;
+    width: 250px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+.footer .coluna-3 .button a {
+    position: relative;
+    top: 15px;
+    font-weight: bold;
+}
+
+.footer .coluna-3 .button i{
+    margin-right: 15px;
 }
 
 
