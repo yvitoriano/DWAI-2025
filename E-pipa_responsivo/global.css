@@ -5,3 +5,17 @@
 .container{
     max-width: 1200px;   
 }
+.container2{
+    max-width: 785px;
+    margin: 0 auto;
+    
+}
+
+.container3{
+    max-width: 985px;
+
+}
+
+.d-block{
+    display: block;
+}
