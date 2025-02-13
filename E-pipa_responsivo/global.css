@@ -9,14 +9,16 @@
 .container2{
     max-width: 785px;
     margin: 0 auto;
-    
 }
 
 .container3{
     max-width: 985px;
-
 }
 
 .container4{
     max-width: 800px;
+}
+
+.column{
+    flex-direction: column;
 }
