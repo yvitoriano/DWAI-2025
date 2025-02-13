@@ -18,8 +18,6 @@ header{
 .midias{
     flex-direction: column;
     width: 100%;
-    max-width: 1200px;
-    padding: 0 20px;
 }
 
 .redes-sociais{
@@ -128,6 +126,7 @@ main h1{
 
 .sub-titulo h2{
     margin: 0;
+    border-bottom: #ffc82c 3px solid;
 }
 
 .descriçao2{
