@@ -1,31 +1,367 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semadec</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Site SEMADEC</title>
     <link rel="stylesheet" href="assets/site.css">
     <link rel="stylesheet" href="assets/semadec_global.css">
 </head>
-<body>
-    <header class="f">
-        <figure class="logo">
-            <img src="assets/img_semadec/logo-awe.svg" alt="logo_agência_web"> 
-        </figure>
-        <div class="funçoes">
-            <p>Suspender inscrições</p>
-            <img src="assets/img_semadec/pause-circle-white.svg" alt="pause">
-            <div class="user">
-                <svg>
-                    <circle class="bg"></circle>
-                    <circle class="fg"></circle>
-                </svg>
-                <p>Clayton</p>
-                <img src="assets/img_semadec/chevron-down.svg" alt="seta">
+
+<body class="flex flex-column">
+    <header class="flex justify-between">
+        <img src="assets/imgs/logo-awe.svg" alt="Logo da AWE">
+        <div class="funcoes flex gap-1 align-center">
+            <div class="btn-inscricao flex align-center gap-1">
+                <span>Supender inscrições</span>
+                <img src="assets/imgs/pause-circle.svg" alt="">
+            </div>
+            <div class="user flex gap-1 align-center">
+                <div class="avatar">
+                    <picture>
+                        <img src="assets/imgs/image_user.png" alt="imagem do usuário">
+                    </picture>
+                </div>
+                <span class="text-primary fw-700">Clayton</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>            
+        </div>
+    </header>
+    <main class="flex">
+        <aside class="left-sidebar flex flex-column justify-between">
+            <div class="menu flex flex-column gap-1">
+                <picture>
+                    <img src="assets/imgs/chevron-left.svg" alt="setas para esquerda">
+                </picture>
+                <button class="item-menu flex">
+                    <div class="container-icon flex align-center justify-between">
+                        <img src="assets/imgs/icon.svg" alt="icon">
+                    </div>
+                    <div class="content-item flex align-center">
+                        <span>Dashboard</span>
+                    </div>
+                </button>
+                <button class="item-menu flex">
+                    <div class="container-icon flex align-center justify-between">
+                        <img src="assets/imgs/users.svg" alt="">
+                    </div>
+                    <div class="content-item flex align-center">
+                        <span>Inscrições</span>
+                    </div>
+                </button>
+                <button class="item-menu flex">
+                    <div class="container-icon flex align-center justify-between">
+                        <img src="assets/imgs/report.svg" alt="">
+                    </div>
+                    <div class="content-item flex align-center">
+                        <span>Relatórios</span>
+                    </div>
+                </button>
+                <button class="item-menu flex">
+                    <div class="container-icon flex align-center justify-between">
+                        <img src="assets/imgs/send.svg" alt="icon">
+                    </div>
+                    <div class="content-item flex align-center">
+                        <span>Comunicação</span>
+                    </div>
+                </button>
+                <button class="item-menu flex">
+                    <div class="container-icon flex align-center justify-between">
+                        <img src="assets/imgs/icon_last_menu.svg" alt="icon">
+                    </div>
+                    <div class="content-item flex align-center">
+                        <span>Meus eventos</span>
+                    </div>
+                </button>
+            </div>
+            <div class="menu-down flex flex-column gap-1">
+                <button class="item-menu flex">
+                    <div class="container-icon flex align-center justify-between">
+                        <img src="assets/imgs/iconconfig.svg" alt="">
+                    </div>
+                    <div class="content-item flex align-center">
+                        <span>Configurações</span>
+                    </div>
+                </button>
+                <button class="item-menu flex">
+                    <div class="container-icon flex align-center justify-between">
+                        <img src="assets/imgs/sair.svg" alt="">
+                    </div>
+                    <div class="content-item flex align-center">
+                        <span>Sair</span>
+                    </div>
+                </button>
+            </div>
+        </aside>
+        <div class="main-content">
+            <div class="header">
+                <div class="left">
+                    <div class="top">
+                        <h2>SEMADEC AWE 2025</h2> <img src="assets/imgs/external-link.svg" alt="icon external link">
+                    </div>
+                    <div class="bottom">
+                        <div class="calendar item-bottom">
+                            <img src="assets/imgs/calendar.svg" alt="icon calendar">
+                            <span>19/03/2025</span>
+                        </div>
+                        <div class="local item-bottom">
+                            <img src="assets/imgs/map-pin.svg" alt="icon map">
+                            <span>IFZN</span>
+                        </div>
+                        <div class="main-content-inscricao item-bottom">
+                            <img src="assets/imgs/user-check.svg" alt="icon check user">
+                            <span>Recebendo Inscrições</span>
+                        </div>
+                    </div>
+                </div>
+                <button>
+                    <img src="assets/imgs/edit.svg" alt="icon edit">
+                    <span>Editar</span>
+                </button>
+            </div>
+            <div class="box-cards">
+                <div class="card">
+                    <div class="header">
+                        <div class="title">
+                            <img src="assets/imgs/users.png" alt="">
+                            <span>Inscrições</span>
+                        </div>
+                        <div class="icons-right">
+                            <img src="assets/imgs/external-link.png" alt="">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3 class="title-h1">125.546</h3>
+                        <small>35% pendentes</small>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="header">
+                        <div class="title">
+                            <img src="assets/imgs/percent.png" alt="">
+                            <span>Descontos</span>
+                        </div>
+                        <div class="icons-right">
+                            <img src="assets/imgs/external-link.png" alt="">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3 class="title-h1">145</h3>
+                        <small>30% usados</small>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="header">
+                        <div class="title">
+                            <img src="assets/imgs/dollar-sign.png" alt="">
+                            <span>Movimentação</span>
+                        </div>
+                        <div class="icons-right">
+                            <img src="assets/imgs/eye.png" alt="">
+                            <img src="assets/imgs/external-link.png" alt="">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3 class="title-h1"><small>R$</small> 1.456.999,00</h3>
+                        <small>+ R$ **** em processamento</small>
+                    </div>
+                </div>
+            </div>
+            <section class="box-funcoes">
+                <div class="title-funcoes">
+                    <h3>Funções</h3> <span> rápidas</span>
+                </div>
+                <div class="items">
+                    <div class="item">
+                        <picture>
+                            <img src="assets/imgs/file-text.svg" alt="">
+                        </picture>
+                        <small>Relatórios</small>
+                    </div>
+                    <div class="item">
+                        <picture>
+                            <img src="assets/imgs/user-plus.svg" alt="">
+                        </picture>
+                        <small>Add Inscrição</small>
+                    </div>
+                    <div class="item">
+                        <picture>
+                            <img src="assets/imgs/percent.svg" alt="">
+                        </picture>
+                        <small>Descontos</small>
+                    </div>
+                    <div class="item">
+                        <picture>
+                            <img src="assets/imgs/users.svg" alt="">
+                        </picture>
+                        <small>Importar</small>
+                    </div>
+                    <div class="item">
+                        <picture>
+                            <img src="assets/imgs/trello.svg" alt="">
+                        </picture>
+                        <small>Cursos</small>
+                    </div>
+                    <div class="item add-item">
+                        <picture>
+                            <img src="assets/imgs/plus-circle.svg" alt="">
+                        </picture>
+                        <small>Mais itens</small>
+                    </div>
+                </div>
+            </section>
+            <div class="area">
+                <section class="news">
+                    <div class="title-news">
+                        <div class="title-funcoes">
+                            <h3>Últimas</h3> <span> inscrições</span>
+                        </div>
+                        <small><a href="#">Ver todas</a></small>
+                    </div>
+                    <div class="box-linhas">
+                        <div class="linha">
+                            <div class="circle verde"></div>
+                            <p class="name">Clayton Rennan</p>
+                            <div class="curso">Info</div>
+                            <div class="modalidades">Natação, Judô</div>
+                        </div>
+                        <div class="linha">
+                            <div class="circle verde"></div>
+                            <p class="name">Andriel Gleisson</p>
+                            <div class="curso">Info</div>
+                            <div class="modalidades">League of Legends</div>
+                        </div>
+                        <div class="linha">
+                            <div class="circle verde"></div>
+                            <p class="name">Filipis Santana</p>
+                            <div class="curso">Eletro</div>
+                            <div class="modalidades">League of Legends</div>
+                        </div>
+                        <div class="linha">
+                            <div class="circle azul"></div>
+                            <p class="name">Alex Sandro</p>
+                            <div class="curso">Com</div>
+                            <div class="modalidades">Tênis de mesa</div>
+                        </div>
+                        <div class="linha">
+                            <div class="circle vermelho"></div>
+                            <p class="name through">João da Silva</p>
+                            <div class="curso through">Info</div>
+                            <div class="modalidades through">Futsal</div>
+                        </div>
+                    </div>
+                </section>
+                <section class="inscricoes-realizadas">
+                    <div class="title-funcoes">
+                        <h3>Últimas</h3> <span> inscrições</span>
+                    </div>
+                    <div class="box-metricas">
+                        <div class="metrica azul-1">
+                            <p>33%</p>
+                            <p>63</p>
+                        </div>
+                        <div class="metrica azul-2">
+                            <p>30%</p>
+                            <p>54</p>
+                        </div>
+                        <div class="metrica azul-3">
+                            <p>30%</p>
+                            <p>54</p>
+                        </div>
+                        <div class="metrica azul-4">
+                            <p>7%</p>
+                            <p>13</p>
+                        </div>
+                    </div>
+                    <div class="info-metricas">
+                        <div class="info">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                                fill="none">
+                                <circle cx="6" cy="6" r="6" fill="#2E96C9" />
+                            </svg>
+                            <span><strong>Info</strong>rmática</span>
+                        </div>
+                        <div class="info">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                                fill="none">
+                                <circle cx="6" cy="6" r="6" fill="#4FADDB" />
+                            </svg>
+                            <span><strong>Eletrô</strong>nica</span>
+                        </div>
+                        <div class="info">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                                fill="none">
+                                <circle cx="6" cy="6" r="6" fill="#90CAE9" />
+                            </svg>
+                            <span><strong>Com</strong>ércio</span>
+                        </div>
+                        <div class="info">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                                fill="none">
+                                <circle cx="6" cy="6" r="6" fill="#E4F1FA" />
+                            </svg>
+                            <span>Outros</span>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
-          
-    </header>
+        <aside class="right-sidebar">
+            <img src="assets/imgs/chevron-left.svg" alt="" class="seta-virada">
+            <div class="content">
+                <div class="tasks">
+                    <div class="title">
+                        <p>Pendências</p>
+                        <small>Acompanhe todas as ações necessárias</small>
+                    </div>
+                    <div class="tasks-lista">
+                        <div class="task">
+                            <div class="container-icon-task">
+                                <img src="assets/imgs/dollar-sign.svg" alt="icon do dollar">
+                            </div>
+                            <span>
+                                Pedidos de cancelamento
+                            </span>
+                        </div>
+                        <div class="task">
+                            <div class="container-icon-task">
+                                <img src="assets/imgs/send.svg" alt="icon do dollar">
+                            </div>
+                            <span>
+                                Solicitação de atendimento
+                            </span>
+                        </div>
+                        <div class="task">
+                            <div class="container-icon-task">
+                                <img src="assets/imgs/check-square.svg" alt="icon do dollar">
+                            </div>
+                            <span>
+                                Avaliação de documentos
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="atividades">
+                    <div class="title">
+                        <p>Pendências</p>
+                        <small><a href="#">Ver todas</a></small>
+                    </div>
+                    <div class="task atividade">
+                        <small class="title">
+                            Entrega de kits da SEMADEC AWE 2025
+                        </small>
+                        <small>Seu kit estará disponível para retirada nos dias 01, 02, 03 e 04 de novembro no Arena
+                            ZN.</small>
+                        <small>20/11/2024 18:00:45</small>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
 </body>
+
 </html>
