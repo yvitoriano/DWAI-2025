@@ -1,3 +1,51 @@
-.flex{
+html, body {
+    max-height: 100%;
+    height: 100%;
+    font-family: "Roboto", serif;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.flex {
     display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.gap-2 {
+    gap: 2rem;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.text-primary {
+    color: #0F3679;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.through{
+    text-decoration: line-through;
 }
